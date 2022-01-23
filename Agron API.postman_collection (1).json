@@ -1,0 +1,368 @@
+{
+	"info": {
+		"_postman_id": "b97b667d-f30f-407f-a92d-4779dca4776e",
+		"name": "Agron API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User (Register User)",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "gorzifagnu@vusra.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "011014Ozi",
+							"type": "text"
+						},
+						{
+							"key": "password_confirmation",
+							"value": "011014Ozi",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "addressname",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/auth/register",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"auth",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@asd.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "011014Ozi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/auth/login",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forgot Password User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@asd.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "011014Ozi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/auth/login",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"auth",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Accounts",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiMTczMWM2YzAxOWE2M2I0NTc0Y2I0MDdmNDY0NDcwM2YxZjAxMTdlOWEyYjFkMjkyMjJlZDg4MDU1NGY0Zjk3NmQzOTMyMDI2OTYyNjBjMmUiLCJpYXQiOjE2Mzc4NDgzOTkuNDU0NDg3LCJuYmYiOjE2Mzc4NDgzOTkuNDU0NDkxLCJleHAiOjE2NjkzODQzOTkuNDQzOTU4LCJzdWIiOiIyMiIsInNjb3BlcyI6W119.ZARF2g5quMlnZH9b8UBwV0hdJVwAq7NPH5-2ND5jBL5d7QEZjw0rLyosAfV7VaOBaO029TQzJOXmjiL1rkWzcV2mMEGKIJxeAihtCvCFOykMbmf9E4dvSEUOlGyZCfn1zdop-fkCxNJ8fd8vohimlUeZCqMrAR4duSEtOiFKOICVmigtB7yreAVuA4Mtk7VWyp7S-_Jl3aqcH-T_K8TasvGOucubxD58vGbDAaxRKkoRPFtqBj-vO25QIxWi9hoksgSRI5hPaur8fEYFiAbvGkJuRNfnirj7yWEViN7WMrqvuVgeqds7ATNcy0pxYXl0J7n_u9UBlCX14W7WvJb0d29AIC_pk0CQYTWYlec8XQexkZQEoE-KEiAeOaturBxa5ajUbeytgKvkoIx8D1WjW3WZjWxf0HzznrjHIOGciaLo5TyGXfToGUUMAvOefVGzZzE_UwG-cT6XJmqJ47cPIeNkR3JioHPDCihhzbiRLYBJQ_JmtdzYsg5S955hmHrqFYurBudxJn057B1GxcfW7uZqApk7zcDZ3FWzY2meMal4nGDivvT8drmo51J9jyaSaAfOUI0Pm2ZhPsXTZehYiBSa97TnhTdifM3epIlvpQCbvEmQ6AsJ8juRjnWmZIDbkqeLyTy1QbFKDvlp6bPUG7Ra81-8qOVVmolaxZcOtRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "TEst Title",
+							"type": "text"
+						},
+						{
+							"key": "api_key",
+							"value": "Api KEy",
+							"type": "text"
+						},
+						{
+							"key": "secret_key",
+							"value": "Secret Key",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/account",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiMTczMWM2YzAxOWE2M2I0NTc0Y2I0MDdmNDY0NDcwM2YxZjAxMTdlOWEyYjFkMjkyMjJlZDg4MDU1NGY0Zjk3NmQzOTMyMDI2OTYyNjBjMmUiLCJpYXQiOjE2Mzc4NDgzOTkuNDU0NDg3LCJuYmYiOjE2Mzc4NDgzOTkuNDU0NDkxLCJleHAiOjE2NjkzODQzOTkuNDQzOTU4LCJzdWIiOiIyMiIsInNjb3BlcyI6W119.ZARF2g5quMlnZH9b8UBwV0hdJVwAq7NPH5-2ND5jBL5d7QEZjw0rLyosAfV7VaOBaO029TQzJOXmjiL1rkWzcV2mMEGKIJxeAihtCvCFOykMbmf9E4dvSEUOlGyZCfn1zdop-fkCxNJ8fd8vohimlUeZCqMrAR4duSEtOiFKOICVmigtB7yreAVuA4Mtk7VWyp7S-_Jl3aqcH-T_K8TasvGOucubxD58vGbDAaxRKkoRPFtqBj-vO25QIxWi9hoksgSRI5hPaur8fEYFiAbvGkJuRNfnirj7yWEViN7WMrqvuVgeqds7ATNcy0pxYXl0J7n_u9UBlCX14W7WvJb0d29AIC_pk0CQYTWYlec8XQexkZQEoE-KEiAeOaturBxa5ajUbeytgKvkoIx8D1WjW3WZjWxf0HzznrjHIOGciaLo5TyGXfToGUUMAvOefVGzZzE_UwG-cT6XJmqJ47cPIeNkR3JioHPDCihhzbiRLYBJQ_JmtdzYsg5S955hmHrqFYurBudxJn057B1GxcfW7uZqApk7zcDZ3FWzY2meMal4nGDivvT8drmo51J9jyaSaAfOUI0Pm2ZhPsXTZehYiBSa97TnhTdifM3epIlvpQCbvEmQ6AsJ8juRjnWmZIDbkqeLyTy1QbFKDvlp6bPUG7Ra81-8qOVVmolaxZcOtRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/account/",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"account",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Accounts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiMTczMWM2YzAxOWE2M2I0NTc0Y2I0MDdmNDY0NDcwM2YxZjAxMTdlOWEyYjFkMjkyMjJlZDg4MDU1NGY0Zjk3NmQzOTMyMDI2OTYyNjBjMmUiLCJpYXQiOjE2Mzc4NDgzOTkuNDU0NDg3LCJuYmYiOjE2Mzc4NDgzOTkuNDU0NDkxLCJleHAiOjE2NjkzODQzOTkuNDQzOTU4LCJzdWIiOiIyMiIsInNjb3BlcyI6W119.ZARF2g5quMlnZH9b8UBwV0hdJVwAq7NPH5-2ND5jBL5d7QEZjw0rLyosAfV7VaOBaO029TQzJOXmjiL1rkWzcV2mMEGKIJxeAihtCvCFOykMbmf9E4dvSEUOlGyZCfn1zdop-fkCxNJ8fd8vohimlUeZCqMrAR4duSEtOiFKOICVmigtB7yreAVuA4Mtk7VWyp7S-_Jl3aqcH-T_K8TasvGOucubxD58vGbDAaxRKkoRPFtqBj-vO25QIxWi9hoksgSRI5hPaur8fEYFiAbvGkJuRNfnirj7yWEViN7WMrqvuVgeqds7ATNcy0pxYXl0J7n_u9UBlCX14W7WvJb0d29AIC_pk0CQYTWYlec8XQexkZQEoE-KEiAeOaturBxa5ajUbeytgKvkoIx8D1WjW3WZjWxf0HzznrjHIOGciaLo5TyGXfToGUUMAvOefVGzZzE_UwG-cT6XJmqJ47cPIeNkR3JioHPDCihhzbiRLYBJQ_JmtdzYsg5S955hmHrqFYurBudxJn057B1GxcfW7uZqApk7zcDZ3FWzY2meMal4nGDivvT8drmo51J9jyaSaAfOUI0Pm2ZhPsXTZehYiBSa97TnhTdifM3epIlvpQCbvEmQ6AsJ8juRjnWmZIDbkqeLyTy1QbFKDvlp6bPUG7Ra81-8qOVVmolaxZcOtRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/account",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiMTczMWM2YzAxOWE2M2I0NTc0Y2I0MDdmNDY0NDcwM2YxZjAxMTdlOWEyYjFkMjkyMjJlZDg4MDU1NGY0Zjk3NmQzOTMyMDI2OTYyNjBjMmUiLCJpYXQiOjE2Mzc4NDgzOTkuNDU0NDg3LCJuYmYiOjE2Mzc4NDgzOTkuNDU0NDkxLCJleHAiOjE2NjkzODQzOTkuNDQzOTU4LCJzdWIiOiIyMiIsInNjb3BlcyI6W119.ZARF2g5quMlnZH9b8UBwV0hdJVwAq7NPH5-2ND5jBL5d7QEZjw0rLyosAfV7VaOBaO029TQzJOXmjiL1rkWzcV2mMEGKIJxeAihtCvCFOykMbmf9E4dvSEUOlGyZCfn1zdop-fkCxNJ8fd8vohimlUeZCqMrAR4duSEtOiFKOICVmigtB7yreAVuA4Mtk7VWyp7S-_Jl3aqcH-T_K8TasvGOucubxD58vGbDAaxRKkoRPFtqBj-vO25QIxWi9hoksgSRI5hPaur8fEYFiAbvGkJuRNfnirj7yWEViN7WMrqvuVgeqds7ATNcy0pxYXl0J7n_u9UBlCX14W7WvJb0d29AIC_pk0CQYTWYlec8XQexkZQEoE-KEiAeOaturBxa5ajUbeytgKvkoIx8D1WjW3WZjWxf0HzznrjHIOGciaLo5TyGXfToGUUMAvOefVGzZzE_UwG-cT6XJmqJ47cPIeNkR3JioHPDCihhzbiRLYBJQ_JmtdzYsg5S955hmHrqFYurBudxJn057B1GxcfW7uZqApk7zcDZ3FWzY2meMal4nGDivvT8drmo51J9jyaSaAfOUI0Pm2ZhPsXTZehYiBSa97TnhTdifM3epIlvpQCbvEmQ6AsJ8juRjnWmZIDbkqeLyTy1QbFKDvlp6bPUG7Ra81-8qOVVmolaxZcOtRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "TEst Title",
+							"type": "text"
+						},
+						{
+							"key": "api_key",
+							"value": "Api KEy",
+							"type": "text"
+						},
+						{
+							"key": "secret_key",
+							"value": "Secret Key",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/account",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"account"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Accounts",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiMTczMWM2YzAxOWE2M2I0NTc0Y2I0MDdmNDY0NDcwM2YxZjAxMTdlOWEyYjFkMjkyMjJlZDg4MDU1NGY0Zjk3NmQzOTMyMDI2OTYyNjBjMmUiLCJpYXQiOjE2Mzc4NDgzOTkuNDU0NDg3LCJuYmYiOjE2Mzc4NDgzOTkuNDU0NDkxLCJleHAiOjE2NjkzODQzOTkuNDQzOTU4LCJzdWIiOiIyMiIsInNjb3BlcyI6W119.ZARF2g5quMlnZH9b8UBwV0hdJVwAq7NPH5-2ND5jBL5d7QEZjw0rLyosAfV7VaOBaO029TQzJOXmjiL1rkWzcV2mMEGKIJxeAihtCvCFOykMbmf9E4dvSEUOlGyZCfn1zdop-fkCxNJ8fd8vohimlUeZCqMrAR4duSEtOiFKOICVmigtB7yreAVuA4Mtk7VWyp7S-_Jl3aqcH-T_K8TasvGOucubxD58vGbDAaxRKkoRPFtqBj-vO25QIxWi9hoksgSRI5hPaur8fEYFiAbvGkJuRNfnirj7yWEViN7WMrqvuVgeqds7ATNcy0pxYXl0J7n_u9UBlCX14W7WvJb0d29AIC_pk0CQYTWYlec8XQexkZQEoE-KEiAeOaturBxa5ajUbeytgKvkoIx8D1WjW3WZjWxf0HzznrjHIOGciaLo5TyGXfToGUUMAvOefVGzZzE_UwG-cT6XJmqJ47cPIeNkR3JioHPDCihhzbiRLYBJQ_JmtdzYsg5S955hmHrqFYurBudxJn057B1GxcfW7uZqApk7zcDZ3FWzY2meMal4nGDivvT8drmo51J9jyaSaAfOUI0Pm2ZhPsXTZehYiBSa97TnhTdifM3epIlvpQCbvEmQ6AsJ8juRjnWmZIDbkqeLyTy1QbFKDvlp6bPUG7Ra81-8qOVVmolaxZcOtRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/account/6?title=test&api_key=testapikey2&secret_key=testsecretkey2&status=disable",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"account",
+						"6"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "test"
+						},
+						{
+							"key": "api_key",
+							"value": "testapikey2"
+						},
+						{
+							"key": "secret_key",
+							"value": "testsecretkey2"
+						},
+						{
+							"key": "status",
+							"value": "disable"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Account",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiI1IiwianRpIjoiMTczMWM2YzAxOWE2M2I0NTc0Y2I0MDdmNDY0NDcwM2YxZjAxMTdlOWEyYjFkMjkyMjJlZDg4MDU1NGY0Zjk3NmQzOTMyMDI2OTYyNjBjMmUiLCJpYXQiOjE2Mzc4NDgzOTkuNDU0NDg3LCJuYmYiOjE2Mzc4NDgzOTkuNDU0NDkxLCJleHAiOjE2NjkzODQzOTkuNDQzOTU4LCJzdWIiOiIyMiIsInNjb3BlcyI6W119.ZARF2g5quMlnZH9b8UBwV0hdJVwAq7NPH5-2ND5jBL5d7QEZjw0rLyosAfV7VaOBaO029TQzJOXmjiL1rkWzcV2mMEGKIJxeAihtCvCFOykMbmf9E4dvSEUOlGyZCfn1zdop-fkCxNJ8fd8vohimlUeZCqMrAR4duSEtOiFKOICVmigtB7yreAVuA4Mtk7VWyp7S-_Jl3aqcH-T_K8TasvGOucubxD58vGbDAaxRKkoRPFtqBj-vO25QIxWi9hoksgSRI5hPaur8fEYFiAbvGkJuRNfnirj7yWEViN7WMrqvuVgeqds7ATNcy0pxYXl0J7n_u9UBlCX14W7WvJb0d29AIC_pk0CQYTWYlec8XQexkZQEoE-KEiAeOaturBxa5ajUbeytgKvkoIx8D1WjW3WZjWxf0HzznrjHIOGciaLo5TyGXfToGUUMAvOefVGzZzE_UwG-cT6XJmqJ47cPIeNkR3JioHPDCihhzbiRLYBJQ_JmtdzYsg5S955hmHrqFYurBudxJn057B1GxcfW7uZqApk7zcDZ3FWzY2meMal4nGDivvT8drmo51J9jyaSaAfOUI0Pm2ZhPsXTZehYiBSa97TnhTdifM3epIlvpQCbvEmQ6AsJ8juRjnWmZIDbkqeLyTy1QbFKDvlp6bPUG7Ra81-8qOVVmolaxZcOtRA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "TEst Title",
+							"type": "text"
+						},
+						{
+							"key": "api_key",
+							"value": "Api KEy",
+							"type": "text"
+						},
+						{
+							"key": "secret_key",
+							"value": "Secret Key",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://agronapi.ihfinancial.co.uk/api/account/5",
+					"host": [
+						"https://agronapi.ihfinancial.co.uk"
+					],
+					"path": [
+						"account",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
